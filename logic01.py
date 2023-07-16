@@ -10,9 +10,12 @@ def main(a,b,c):
     """
     if b>a and b<c:
         return True
+    if b>c and b<a:
+        return True
     else:
         return False
     
 print(main(4,5,6))
 print(main(6,4,5))
+print(main(6,4,1))
     
